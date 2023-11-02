@@ -1,10 +1,18 @@
+const MongoClient = require('mongodb').MongoClient;
 const dotenv = require('dotenv');
 dotenv.config();
-const MongoClient = require('mongodb').MongoClient;
+
 
 let db;
+mongoose.connect(`mongodb+srv://michelleguti17:DiosyoteamO17!@cluster0.vgwo4if.mongodb.net/project1`,(err)=>{
+    if(err) throw err;
+    console.log('Connected Successfully');
+    }),(err)=>{
+if(err) throw err;
+console.log("DB Connected Successfully");
+};
 
-const initDb = (callback) => {
+/* const initDb = (callback) => {
     if(db){
         console.log('Db is already initialized');
         return callback(null,database);
@@ -32,7 +40,7 @@ const getDatabase =() => {
 
 
 
-};
+}; */
 module.exports = {
     initDb,
     getDatabase
