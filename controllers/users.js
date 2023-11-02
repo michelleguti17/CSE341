@@ -9,7 +9,6 @@ const getAll = async (req, res) => {
         });
 };
 
-
 const getSingle = async (req, res) => {
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection('users').find((userId));
