@@ -1,0 +1,5 @@
+### Get all contacts
+GET https://prject1.onrender.com/users
+
+### Get contact by id
+GET https://prject1.onrender.com/users/6543f42580d4996d6a5ef2cc
