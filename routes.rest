@@ -1,5 +1,35 @@
-### Get all contacts
+### Get all users
 GET https://prject1.onrender.com/users
 
 ### Get contact by id
 GET https://prject1.onrender.com/users/6543f42580d4996d6a5ef2cc
+
+
+### Create contact
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+  "email": "test5@example.com",
+  "username": "test5@test.com",
+  "name": "Maria",
+  "ipadress": "157.100.141.14/44"
+}
+
+
+### PUT contact
+PUT http://localhost:3000/users/654ba9898b2836c9c494375b HTTP/1.1
+content-type: application/json
+
+{
+  "email": "test@example.com",
+  "username": "test@test.com",
+  "name": "John",
+  "ipadress": "157.100.141.14/31"
+}
+### DELETE contact
+
+
+
+DELETE http://localhost:3000/users/654bae5b34b9e793175eb798 HTTP/1.1
+
